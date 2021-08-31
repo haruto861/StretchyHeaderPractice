@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		F18CBA1126DD54B900A14143 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CBA1026DD54B900A14143 /* AppDelegate.swift */; };
 		F18CBA1326DD54B900A14143 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CBA1226DD54B900A14143 /* SceneDelegate.swift */; };
-		F18CBA1526DD54B900A14143 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CBA1426DD54B900A14143 /* ViewController.swift */; };
-		F18CBA1826DD54B900A14143 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18CBA1626DD54B900A14143 /* Main.storyboard */; };
 		F18CBA1A26DD54BB00A14143 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F18CBA1926DD54BB00A14143 /* Assets.xcassets */; };
-		F18CBA1D26DD54BB00A14143 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18CBA1B26DD54BB00A14143 /* LaunchScreen.storyboard */; };
+		F18CBA2626DE09B100A14143 /* StretchyHeaderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CBA2426DE09B100A14143 /* StretchyHeaderTableViewCell.swift */; };
+		F18CBA2726DE09B100A14143 /* StretchyHeaderTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F18CBA2526DE09B100A14143 /* StretchyHeaderTableViewCell.xib */; };
+		F18CBA2B26DE0B2D00A14143 /* StretchyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F18CBA2A26DE0B2D00A14143 /* StretchyHeaderViewController.swift */; };
+		F18CBA2D26DE0B7F00A14143 /* StretchyHeader.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F18CBA2C26DE0B7F00A14143 /* StretchyHeader.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F18CBA0D26DD54B900A14143 /* StretchyHeaderPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StretchyHeaderPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F18CBA1026DD54B900A14143 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F18CBA1226DD54B900A14143 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		F18CBA1426DD54B900A14143 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F18CBA1726DD54B900A14143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F18CBA1926DD54BB00A14143 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F18CBA1C26DD54BB00A14143 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F18CBA1E26DD54BB00A14143 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F18CBA2426DE09B100A14143 /* StretchyHeaderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderTableViewCell.swift; sourceTree = "<group>"; };
+		F18CBA2526DE09B100A14143 /* StretchyHeaderTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StretchyHeaderTableViewCell.xib; sourceTree = "<group>"; };
+		F18CBA2A26DE0B2D00A14143 /* StretchyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderViewController.swift; sourceTree = "<group>"; };
+		F18CBA2C26DE0B7F00A14143 /* StretchyHeader.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = StretchyHeader.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,32 @@
 		F18CBA0F26DD54B900A14143 /* StretchyHeaderPractice */ = {
 			isa = PBXGroup;
 			children = (
+				F18CBA2826DE09B600A14143 /* StretchyHeader */,
 				F18CBA1026DD54B900A14143 /* AppDelegate.swift */,
 				F18CBA1226DD54B900A14143 /* SceneDelegate.swift */,
-				F18CBA1426DD54B900A14143 /* ViewController.swift */,
-				F18CBA1626DD54B900A14143 /* Main.storyboard */,
 				F18CBA1926DD54BB00A14143 /* Assets.xcassets */,
-				F18CBA1B26DD54BB00A14143 /* LaunchScreen.storyboard */,
 				F18CBA1E26DD54BB00A14143 /* Info.plist */,
 			);
 			path = StretchyHeaderPractice;
+			sourceTree = "<group>";
+		};
+		F18CBA2826DE09B600A14143 /* StretchyHeader */ = {
+			isa = PBXGroup;
+			children = (
+				F18CBA2926DE0B0400A14143 /* Cell */,
+				F18CBA2A26DE0B2D00A14143 /* StretchyHeaderViewController.swift */,
+				F18CBA2C26DE0B7F00A14143 /* StretchyHeader.storyboard */,
+			);
+			path = StretchyHeader;
+			sourceTree = "<group>";
+		};
+		F18CBA2926DE0B0400A14143 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F18CBA2426DE09B100A14143 /* StretchyHeaderTableViewCell.swift */,
+				F18CBA2526DE09B100A14143 /* StretchyHeaderTableViewCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,9 +143,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18CBA1D26DD54BB00A14143 /* LaunchScreen.storyboard in Resources */,
 				F18CBA1A26DD54BB00A14143 /* Assets.xcassets in Resources */,
-				F18CBA1826DD54B900A14143 /* Main.storyboard in Resources */,
+				F18CBA2D26DE0B7F00A14143 /* StretchyHeader.storyboard in Resources */,
+				F18CBA2726DE09B100A14143 /* StretchyHeaderTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,32 +156,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F18CBA1526DD54B900A14143 /* ViewController.swift in Sources */,
 				F18CBA1126DD54B900A14143 /* AppDelegate.swift in Sources */,
+				F18CBA2626DE09B100A14143 /* StretchyHeaderTableViewCell.swift in Sources */,
+				F18CBA2B26DE0B2D00A14143 /* StretchyHeaderViewController.swift in Sources */,
 				F18CBA1326DD54B900A14143 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		F18CBA1626DD54B900A14143 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F18CBA1726DD54B900A14143 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		F18CBA1B26DD54BB00A14143 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F18CBA1C26DD54BB00A14143 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F18CBA1F26DD54BB00A14143 /* Debug */ = {
